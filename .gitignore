@@ -1,0 +1,14 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch / Reference files
+panel2_ref.jpg
+scratch/
+*.tmp
+*.log
+
+# IDE files
+.vscode/
+.idea/

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VALMORA — A Legend Reimagined | Custom Built Grand Tourer</title>
+  <meta name="description" content="A cinematic luxury showcase for the VALMORA Grand Tourer. Handcrafted coachbuilding meets modern motorsport precision.">
+
+  <!-- Google Fonts: Cinzel & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Ambient Stage Overlays -->
+  <div class="ambient-glow"></div>
+  <div class="noise-overlay"></div>
+  <div class="cursor-spotlight"></div>
+
+  <!-- ========================================================================
+       1. LUXURY HEADER / NAVBAR
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="VALMORA Home">
+        <svg class="brand-crest" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+        <span class="brand-name">VALMORA</span>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#view360" class="nav-link">360° View</a></li>
+          <li><a href="#view360" class="nav-link">Hotspots</a></li>
+          <li><a href="#roadmap" class="nav-link">Specifications</a></li>
+          <li><a href="#roadmap" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Interactive V8 Engine Sound Engine Toggle -->
+        <button class="audio-btn" id="audioToggle" title="Play Ambient V8 Sound Engine" aria-label="Toggle Ambient Audio">
+          <div class="audio-bars">
+            <span class="audio-bar"></span>
+            <span class="audio-bar"></span>
+            <span class="audio-bar"></span>
+          </div>
+        </button>
+
+        <!-- Inquire CTA -->
+        <a href="#contact" class="header-cta">Inquire</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. HERO SECTION & CAR REVEAL ANIMATION (Step 1 & 2)
+       ======================================================================== -->
+  <main>
+    <div class="hero-scroll-container" id="hero">
+      <div class="hero-pinned-viewport">
+
+        <!-- Studio Lighting & Atmosphere -->
+        <div class="studio-stage">
+          <div class="studio-spotlight"></div>
+          <div class="studio-grid-floor"></div>
+          <!-- Section 2: Cinematic Lighting Beam & Flare -->
+          <div class="studio-cinematic-beam" id="cinematicBeam"></div>
+          <div class="studio-lens-flare" id="studioFlare"></div>
+        </div>
+
+        <!-- Car Dual Layers (Covered vs Revealed) -->
+        <div class="car-display-wrapper">
+          <div class="car-scene" id="heroCarScene">
+            
+            <!-- Layer 1: Revealed Oxblood-Red Vintage Grand Tourer (Underneath) -->
+            <div class="car-layer layer-revealed">
+              <img src="assets/car_revealed.jpg" alt="VALMORA Vintage Grand Tourer in Oxblood Red" class="car-image">
+            </div>
+
+            <!-- Layer 2: Covered Car with Silky Charcoal Dust Sheet (Top with Mask) -->
+            <div class="car-layer layer-covered">
+              <img src="assets/car_covered.jpg" alt="VALMORA Grand Tourer draped under custom dust cover" class="car-image">
+            </div>
+
+            <!-- Cloth Reveal Seam & Ambient Shadow Effects -->
+            <div class="cloth-fold-shadow"></div>
+            <div class="cloth-peel-seam"></div>
+
+            <!-- Studio Vignette -->
+            <div class="car-vignette"></div>
+
+          </div>
+        </div>
+
+        <!-- Hero Content Layer -->
+        <div class="hero-content-layer">
+
+          <!-- Top Meta Info -->
+          <div class="hero-meta-top">
+            <div class="series-badge">
+              <span class="status-dot"></span>
+              <span>1 OF 25 COACHBUILT EDITIONS</span>
+            </div>
+            <div class="series-model-code">
+              <span>SERIES I &bull; CHASSIS N° 001</span>
+            </div>
+          </div>
+
+          <!-- Primary Hero Headline Block (Stage 1: Covered) -->
+          <div class="hero-text-block">
+            <div class="hero-subtitle">Custom Built Grand Tourer</div>
+            <h1 class="hero-title">A LEGEND<br>REIMAGINED</h1>
+            <p class="hero-description">
+              Handcrafted Italian coachbuilding meets modern motorsport precision. 
+              Sculpted for those who demand uncompromising performance wrapped in pure, timeless elegance.
+            </p>
+            <div class="cta-group">
+              <a href="#reveal" class="btn-primary-valmora">
+                <span>EXPLORE THE JOURNEY</span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <button class="btn-quick-reveal" id="btnQuickReveal">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>Quick Unveil</span>
+              </button>
+            </div>
+          </div>
+
+
+
+          <!-- Bottom Bar & Scroll Guidance -->
+          <div class="hero-bottom-bar">
+            
+            <!-- Quick Spec Preview -->
+            <div class="hero-spec-snippet">
+              <div class="spec-mini-item">
+                <span class="spec-mini-value">450</span>
+                <span class="spec-mini-label">Horsepower</span>
+              </div>
+              <div class="spec-mini-item">
+                <span class="spec-mini-value">4.5<small style="font-size: 0.9rem;">s</small></span>
+                <span class="spec-mini-label">0-60 MPH</span>
+              </div>
+              <div class="spec-mini-item">
+                <span class="spec-mini-value">160<small style="font-size: 0.8rem;">mph</small></span>
+                <span class="spec-mini-label">Top Speed</span>
+              </div>
+            </div>
+
+            <!-- Scroll Wheel Indicator (Matching reference image) -->
+            <div class="scroll-indicator-container" title="Click to scroll down">
+              <span class="scroll-text">Scroll to unveil</span>
+              <div class="scroll-mouse-pill">
+                <div class="scroll-mouse-wheel"></div>
+              </div>
+              <span class="scroll-progress-badge">0%</span>
+            </div>
+
+            <!-- Manual Scrub Slider (Bottom Right) -->
+            <div class="hero-scrub-panel">
+              <span class="scrub-label">Peel Cover</span>
+              <input type="range" min="0" max="100" value="0" class="reveal-range-slider" id="revealSlider" aria-label="Manual cover reveal slider">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         3. 360° CAR VIEW & INTERACTIVE HOTSPOTS SECTION (Step 3 & 4)
+         ======================================================================== -->
+    <section class="viewer-360-section" id="view360">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="viewer-360-header">
+          <div class="section-header-tag">360° Interactive Studio</div>
+          <h2 class="section-main-heading">Inspect Every Angle & Detail</h2>
+          <p class="section-lead-text">
+            Drag to rotate the oxblood-red Grand Tourer across 360 degrees. Select distinct exterior viewpoints or click any hotspot to inspect handcrafted engineering specifications.
+          </p>
+        </div>
+
+        <!-- 360 Interactive Stage Container -->
+        <div class="turntable-container" id="turntableContainer">
+          
+          <!-- Top Badges & Status -->
+          <div class="turntable-top-bar">
+            <div class="badge-360">
+              <svg class="spin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+              </svg>
+              <span>360° Turntable</span>
+            </div>
+            <div class="turntable-angle-badge" id="turntableAngleBadge">Angle: 0° &bull; Front 3/4 View</div>
+          </div>
+
+          <!-- Turntable Stage Viewport -->
+          <div class="turntable-viewport" id="turntableViewport">
+            
+            <!-- On-Stage Close-Up HUD Banner & Reset Button -->
+            <div class="turntable-closeup-hud" id="turntableCloseupHud">
+              <div class="closeup-badge">
+                <span class="closeup-reticle"></span>
+                <span id="closeupHudText">MACRO CAMERA: ADAPTIVE LED HEADLIGHTS</span>
+              </div>
+              <button class="btn-stage-reset" id="stageResetBtn" title="Reset Zoom to Full Car">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Full 360° View</span>
+              </button>
+            </div>
+
+            <!-- Dynamic Studio Floor Reflection Ring -->
+            <div class="turntable-floor-glow"></div>
+
+            <!-- Active Car Image Display -->
+            <div class="turntable-image-stage" id="turntableImageStage">
+              <img src="assets/car_revealed.jpg" alt="VALMORA 360 Turntable View" class="turntable-car-img" id="turntableCarImg" draggable="false">
+            </div>
+
+            <!-- Interactive Hotspot Pins (Linked to vehicle features) -->
+            <div class="hotspots-layer" id="hotspotsLayer">
+              
+              <!-- Hotspot 1: Headlights -->
+              <button class="hotspot-pin" id="pinHeadlights" style="top: 55%; left: 34%;" data-hotspot="headlights" aria-label="Inspect Adaptive Headlights">
+                <span class="hotspot-radar"></span>
+                <span class="hotspot-core"></span>
+                <span class="hotspot-tooltip">Adaptive LED Headlights</span>
+              </button>
+
+              <!-- Hotspot 2: V8 Engine -->
+              <button class="hotspot-pin" id="pinEngine" style="top: 48%; left: 47%;" data-hotspot="engine" aria-label="Inspect 4.7L V8 Engine">
+                <span class="hotspot-radar"></span>
+                <span class="hotspot-core"></span>
+                <span class="hotspot-tooltip">4.7L Quad-Cam V8</span>
+              </button>
+
+              <!-- Hotspot 3: Borrani Wire Wheels -->
+              <button class="hotspot-pin" id="pinWheels" style="top: 67%; left: 50%;" data-hotspot="wheels" aria-label="Inspect Borrani Wheels">
+                <span class="hotspot-radar"></span>
+                <span class="hotspot-core"></span>
+                <span class="hotspot-tooltip">Borrani Wire Wheels</span>
+              </button>
+
+              <!-- Hotspot 4: Coachwork -->
+              <button class="hotspot-pin" id="pinCoachwork" style="top: 40%; left: 63%;" data-hotspot="coachwork" aria-label="Inspect Superleggera Coachwork">
+                <span class="hotspot-radar"></span>
+                <span class="hotspot-core"></span>
+                <span class="hotspot-tooltip">Oxblood Coachwork</span>
+              </button>
+
+              <!-- Hotspot 5: Cockpit -->
+              <button class="hotspot-pin" id="pinInterior" style="top: 43%; left: 56%;" data-hotspot="interior" aria-label="Inspect Connolly Interior">
+                <span class="hotspot-radar"></span>
+                <span class="hotspot-core"></span>
+                <span class="hotspot-tooltip">Bespoke Interior</span>
+              </button>
+
+            </div>
+
+          </div>
+
+          <!-- Floating Right View Selectors (Matching Panel 3 of Design Board) -->
+          <div class="turntable-view-selectors">
+            <div class="view-selectors-heading">Exterior Views</div>
+            <button class="view-pill active" data-view="exterior">
+              <span class="pill-dot"></span>
+              <span>Exterior 360°</span>
+            </button>
+            <button class="view-pill" data-view="headlights">
+              <span class="pill-dot"></span>
+              <span>Headlights</span>
+            </button>
+            <button class="view-pill" data-view="engine">
+              <span class="pill-dot"></span>
+              <span>Engine & Hood</span>
+            </button>
+            <button class="view-pill" data-view="wheels">
+              <span class="pill-dot"></span>
+              <span>Wire Wheels</span>
+            </button>
+            <button class="view-pill" data-view="rear">
+              <span class="pill-dot"></span>
+              <span>Rear Fastback</span>
+            </button>
+            <button class="view-pill" data-view="coachwork">
+              <span class="pill-dot"></span>
+              <span>Coachwork</span>
+            </button>
+            <button class="view-pill" data-view="side">
+              <span class="pill-dot"></span>
+              <span>Side Profile</span>
+            </button>
+            <button class="view-pill" id="toggleHotspotsBtn">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Hotspots <b id="hotspotsStatusText">ON</b></span>
+            </button>
+          </div>
+
+          <!-- Bottom Rotation Controls & Scrub Track -->
+          <div class="turntable-bottom-bar">
+            
+            <button class="btn-turntable-action" id="btnAutoRotate" title="Toggle 360 Auto-Rotation">
+              <svg class="turntable-play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span id="autoRotateText">Auto Rotate</span>
+            </button>
+
+            <div class="turntable-drag-prompt">
+              <svg class="hand-drag-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 11V6a2 2 0 0 0-4 0v5"></path>
+                <path d="M14 10V4a2 2 0 0 0-4 0v7"></path>
+                <path d="M10 10.5V6a2 2 0 0 0-4 0v8"></path>
+                <path d="M6 14v-1.5a2 2 0 0 0-4 0V16c0 4.4 3.6 8 8 8h3c3.9 0 7-3.1 7-7v-3.5a2 2 0 0 0-4 0V14"></path>
+              </svg>
+              <span>Drag to rotate</span>
+            </div>
+
+            <div class="turntable-scrub-wrap">
+              <span class="scrub-label">0°</span>
+              <input type="range" min="0" max="359" value="0" class="turntable-slider" id="turntableSlider" aria-label="360 rotation angle slider">
+              <span class="scrub-label">360°</span>
+            </div>
+
+          </div>
+
+          <!-- Interactive Hotspot Detail Modal / Drawer (Matching Panel 4 of Reference Design) -->
+          <div class="hotspot-modal" id="hotspotModal" aria-hidden="true">
+            <div class="hotspot-modal-backdrop" id="hotspotModalBackdrop"></div>
+            <div class="hotspot-modal-card">
+              <button class="hotspot-modal-close" id="hotspotModalClose" aria-label="Close detail modal">&times;</button>
+              
+              <!-- Macro Part Preview with cinematic framing -->
+              <div class="modal-macro-preview" id="modalMacroPreview">
+                <img src="assets/part_headlight.jpg" alt="Component Macro Detail" class="modal-part-img" id="modalPartImg">
+                <div class="modal-macro-overlay">
+                  <span class="modal-macro-badge" id="modalMacroBadge">MACRO DETAIL &bull; 100% FOCUS</span>
+                  <span class="modal-macro-lens">F/2.8 &bull; 85MM</span>
+                </div>
+              </div>
+
+              <div class="modal-badge-tag" id="modalBadgeTag">COMPONENT SPECIFICATION</div>
+              <h3 class="modal-feature-title" id="modalTitle">Adaptive LED Headlights</h3>
+              <p class="modal-feature-desc" id="modalDesc">
+                Classic round headlights with modern LED technology, blending heritage with performance.
+              </p>
+
+              <div class="modal-specs-grid" id="modalSpecsTable">
+                <!-- Dynamically populated via JavaScript -->
+              </div>
+
+              <div class="modal-footer-actions">
+                <button class="btn-reset-view" id="modalResetZoomBtn" title="Reset to full car view">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Full 360° View</span>
+                </button>
+                <button class="btn-primary-valmora" style="padding: 0.75rem 1.6rem; font-size: 0.74rem;" id="modalInspectBtn">
+                  <span>DISMISS</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ROADMAP & PROCESS SECTION (From Reference Image)
+         ======================================================================== -->
+    <section class="roadmap-preview-section" id="roadmap">
+      <div class="section-container">
+        
+        <div class="section-header-tag">Step-by-Step Website Creation</div>
+        <h2 class="section-main-heading">Crafting the Valmora Digital Experience</h2>
+        <p class="section-lead-text">
+          Follow the architectural progression from the initial hero reveal through 360° exploration, engine diagnostics, and specification performance.
+        </p>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card active-step">
+            <div class="step-number">Step 01 <span class="step-pill-current">Active Stage</span></div>
+            <h3 class="step-title">Hero Section & Covered Car</h3>
+            <p class="step-desc">
+              Cinematic studio ambiance with the car draped in tailored silk dust cover. Features bold serif typography, audio engine, and reactive scroll initiation.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card active-step">
+            <div class="step-number">Step 02 <span class="step-pill-current">Active Stage</span></div>
+            <h3 class="step-title">Car Reveal Animation</h3>
+            <p class="step-desc">
+              The dust cover slides away smoothly as the page scrolls, revealing the realistic oxblood-red grand tourer with cinematic spotlight choreography and camera movement.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card active-step">
+            <div class="step-number">Step 03 <span class="step-pill-current">Active Stage</span></div>
+            <h3 class="step-title">360° Car View / Exterior</h3>
+            <p class="step-desc">
+              Interactive 360-degree rotation allowing collectors to inspect angles from any viewpoint, with hotspots and dedicated exterior cameras.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <div class="step-number">Step 04</div>
+            <h3 class="step-title">Interactive Hotspots</h3>
+            <p class="step-desc">
+              Clickable hotspots on adaptive LED headlights, Borrani wire wheels, exhaust tips, and badges revealing engineering specs.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="step-card">
+            <div class="step-number">Step 05</div>
+            <h3 class="step-title">Interior Details</h3>
+            <p class="step-desc">
+              Hand-stitched Connolly leather, polished wood instrumentation, analog chronographs, and immersive cockpit gallery.
+            </p>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="step-card">
+            <div class="step-number">Step 06</div>
+            <h3 class="step-title">Engine Section</h3>
+            <p class="step-desc">
+              Engine bay view with authentic mechanical sound, 4.7L Naturally Aspirated V8 architecture, and animated tachometer dial.
+            </p>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="step-card">
+            <div class="step-number">Step 07</div>
+            <h3 class="step-title">Performance & Specs</h3>
+            <p class="step-desc">
+              Animated metric counters: 450 HP, 420 lb-ft torque, 0-60 in 4.5s, 160 mph top speed, and complete technical breakdown.
+            </p>
+          </div>
+
+          <!-- Step 8 -->
+          <div class="step-card">
+            <div class="step-number">Step 08</div>
+            <h3 class="step-title">Gallery & Final CTA</h3>
+            <p class="step-desc">
+              High-resolution location photography, bespoke commission request form, and luxury footer with social connections.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
